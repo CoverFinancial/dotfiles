@@ -13,6 +13,9 @@ export PATH=$ANDROID_HOME/build-tools/19.1.0:$PATH
 
 export BUNDLE_PATH=~/.gems
 
+touch ~/.gemrc
+echo "gem: --no-document" >> ~/.gemrc
+
 mkdir -p ~/.rbenv
 echo "bundler\ncocoapods" >> ~/.rbenv/default-gems
 sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
